@@ -10,26 +10,26 @@ transactions in real-time using a **Random Forest Classifier** trained on
 
 ## 📁 Project Structure
 
-```
+## 📁 Project Structure
+
 fraud_detection/
-│
 ├── data/
-│   └── PS_20174392719_1491204439457_log.csv   ← Put dataset here
-│
+│   └── fraud_dataset.csv
 ├── flask/
 │   ├── templates/
-│   │   ├── home.html       ← Landing page
-│   │   ├── predict.html    ← Input form
-│   │   └── submit.html     ← Results page
-│   ├── app.py              ← Flask backend
-│   └── payments.pkl        ← Trained model (auto-generated)
-│
+│   │   ├── home.html        ← Landing page
+│   │   ├── predict.html     ← Input form
+│   │   └── submit.html      ← Results page
+│   ├── app.py               ← Flask backend
+│   ├── app_ibm.py           ← IBM Cloud deployment
+│   └── payments.pkl         ← Trained model
 ├── training/
-│   ├── train_model.py      ← Run this first to train model
-│   └── payments.pkl        ← Saved model
-│
+│   ├── ONLINE PAYMENTS FRAUD DETECTION.ipynb
+│   └── payments.pkl         ← Saved model
+├── training_ibm/
+│   └── online payments fraud prediction using ibm.ipynb
 └── requirements.txt
-```
+
 
 ---
 
